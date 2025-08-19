@@ -1,0 +1,135 @@
+.page {
+    max-width: 970px;
+    margin: 1.5rem auto;
+    padding: 0 1rem;
+  }
+  
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  
+  .add-btn {
+    background: #e5efff;
+    color: #1f4fd1;
+    border: 1px solid #c2d6ff;
+    border-radius: 8px;
+    padding: 0.5rem 0.75rem;
+    cursor: pointer;
+  }
+  
+  .search {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #eef2f7;
+    border: 1px solid #e5e7eb;
+    padding: 0.6rem 0.8rem;
+    border-radius: 10px;
+    margin-bottom: 0.75rem;
+  }
+  
+  .icon {
+    color: #9ca3af;
+  }
+  
+  .search input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+  }
+
+  .filters {
+    display: flex;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+  }
+  
+  .filter-select {
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    font-size: 0.875rem;
+    color: #374151;
+    cursor: pointer;
+    transition: border-color 0.2s ease;
+  
+    &:hover {
+      border-color: #cbd5e1;
+    }
+  
+    &:focus {
+      outline: none;
+      border-color: #3b82f6;
+      box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+    }
+  }
+  
+  
+  .table-wrapper {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+  }
+  
+  thead th {
+    background: #f9fafb;
+    text-align: left;
+    padding: 0.9rem 1rem;
+    color: #6b7280;
+    font-weight: 600;
+  }
+  
+  tbody td {
+    padding: 1rem;
+    color: #111827;
+    border-top: 1px solid #eef2f7;
+  }
+  
+  .address {
+    display: flex;
+    gap: 0.25rem;
+    flex-direction: column;
+    color: #374151;
+  }
+  
+  .badge {
+    background: #eef6ff;
+    border: 1px solid #d0e2ff;
+    color: #1d4ed8;
+    padding: 0.25rem 0.6rem;
+    border-radius: 8px;
+    font-size: 0.85rem;
+  }
+  
+  .link {
+    color: #1d4ed8;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .link-button {
+    background: none;
+    border: none;
+    color: #1d4ed8;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+
