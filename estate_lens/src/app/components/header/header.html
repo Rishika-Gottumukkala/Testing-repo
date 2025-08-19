@@ -1,0 +1,51 @@
+<header class="header">
+  <div class="header-container">
+    <!-- Logo Section -->
+    <div class="logo-section">
+      <div class="logo">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3 21V12L12 3L21 12V21H14V16H10V21H3Z" fill="currentColor"/>
+        </svg>
+        <span class="brand-name">PropertyTrackr</span>
+      </div>
+    </div>
+
+    <!-- Navigation Section -->
+    <nav class="navigation">
+      <ul class="nav-list">
+        <li 
+          *ngFor="let item of navigationItems" 
+          class="nav-item" 
+          [class.active]="item.active"
+          (click)="onNavItemClick(item)"
+        >
+          {{ item.label }}
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Right Section with Search and Avatar -->
+    <div class="right-section">
+      <!-- Search Bar -->
+      <div class="search-container">
+        <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M21 21L16.514 16.506L21 21ZM19 10.5C19 15.194 15.194 19 10.5 19C5.806 19 2 15.194 2 10.5C2 5.806 5.806 2 10.5 2C15.194 2 19 5.806 19 10.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <input 
+          type="text" 
+          placeholder="Search" 
+          class="search-input"
+          [value]="searchValue"
+          (input)="onSearchChange($event)"
+        />
+      </div>
+
+      <!-- User Avatar -->
+      <div class="user-avatar">
+        <img src="https://images.unsplash.com/photo-1494790108755-2616b612c2bd?w=40&h=40&fit=crop&crop=face&auto=format" 
+             alt="User Avatar" 
+             class="avatar-image" />
+      </div>
+    </div>
+  </div>
+</header>
